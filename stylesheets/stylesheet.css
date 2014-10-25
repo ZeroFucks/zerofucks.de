@@ -52,17 +52,113 @@ Theme Styles
   box-sizing: border-box;
 }
 
-body {
-  background: #191d28;
-  font-size: 16px;
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
 }
 
-img {
+.clearfix:after {
+  clear: both;
+}
+
+body {
+  background: #1f1c14 url(../images/bg.jpg) no-repeat 0 0;
+  background-size: cover;
+  color: rgba(255,255,255,0.6);
+  font: 24px/1.4 'Helvetica Neue', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  padding: 60px;
+}
+
+.section-header {
+  color: rgba(255,255,255,0.3);
+  font-size: 16px;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
+.section-header:before {
+  background: rgba(255,255,255,0.1);
+  bottom: -5px;
+  content: " ";
+  height: 2px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -375px 0 0 -250px;
+  width: 40px;
+}
+
+section {
+  margin-bottom: 45px;
+}
+
+.column {
+  float: left;
+  margin-right: 50px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+.one-fourth {
+  width: 25%;
+}
+
+.two-fifths {
+  width: 50%;
+}
+
+.three-fifths {
+  width: 75%;
+}
+
+.human-meta {
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+
+input,
+button {
+  outline: none;
+}
+
+input[type=text] {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 6px;
+}
+
+input[type=text]:focus {
+  background: #1f1f16;
+  color: #fff;
+}
+
+button[type=submit] {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: rgba(255,255,255,0.6);
+  padding: 7px;
+}
+
+button[type=submit]:active {
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.3);
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 1em;
+}
+
+a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
 }
