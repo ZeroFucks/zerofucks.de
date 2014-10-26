@@ -67,13 +67,14 @@ body {
   background: #1f1c14 url(../images/bg.jpg) no-repeat 0 0;
   background-size: cover;
   color: rgba(255,255,255,0.6);
-  font: 24px/1.4 'Helvetica Neue', 'Helvetica', sans-serif;
+  font: 14px/1.4 'Helvetica Neue', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 .container {
-  padding: 60px;
+  padding: 60px 0 60px 60px;
+  width: 960px;
 }
 
 .section-header {
@@ -120,6 +121,10 @@ section {
   width: 75%;
 }
 
+.roster {
+  font-size: 24px;
+}
+
 .human-meta {
   color: rgba(255,255,255,0.3);
   font-size: 12px;
@@ -127,6 +132,7 @@ section {
 
 input,
 button {
+  font-family: "Helvetica Neue", sans-serif;
   outline: none;
 }
 
@@ -156,11 +162,15 @@ input[type=submit]:active {
 }
 
 p {
-  font-size: 14px;
   margin: 0 0 1em;
 }
 
 a {
   color: rgba(255,255,255,0.85);
   text-decoration: none;
+  transition: color 0.15s ease 0s;
+}
+
+a:hover {
+  color: rgba(255,255,255,0.6);
 }
