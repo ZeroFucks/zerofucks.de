@@ -74,7 +74,7 @@ body {
 
 .container {
   padding: 60px 0 60px 60px;
-  width: 960px;
+  width: 1000px;
 }
 
 .section-header {
@@ -102,7 +102,7 @@ section {
 
 .column {
   float: left;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .column:last-child {
