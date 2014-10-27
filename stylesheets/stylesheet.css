@@ -52,6 +52,15 @@ Theme Styles
   box-sizing: border-box;
 }
 
+a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255,255,255,0.6);
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -73,7 +82,8 @@ body {
 }
 
 .container {
-  padding: 60px 0 60px 60px;
+  margin: 0 auto;
+  padding: 60px 0;
   width: 1000px;
 }
 
@@ -163,14 +173,4 @@ input[type=submit]:active {
 
 p {
   margin: 0 0 1em;
-}
-
-a {
-  color: rgba(255,255,255,0.85);
-  text-decoration: none;
-  transition: color 0.15s ease 0s;
-}
-
-a:hover {
-  color: rgba(255,255,255,0.6);
 }
