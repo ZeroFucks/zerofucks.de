@@ -174,3 +174,12 @@ input[type=submit]:active {
 p {
   margin: 0 0 1em;
 }
+
+section.dj h2 {
+  font-size: 24px;
+  color: rgba(255,255,255,0.85);
+}
+
+section.dj p {
+  color: rgba(255,255,255,0.85);
+}
